@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript a DOM</title>
+	<link
+		href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Sans+Pro:400,400i,700,700i&amp;subset=latin-ext"
+		rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<h1>Změna tříd, události</h1>
+	<p class="paragraph" onmouseover="tucne(event)" onmouseout="normal(event)" style="font-size:16px">V elipse spí lev.
+	</p>
+	<button onclick="cerveny()">Červený po kliknutí</button>
+	<button onclick="vetsi()">Vetší po kliknutí</button><br>
+
+	<audio src="audio/dingdingdang.mp3" id="audio" preload="auto"></audio>
+
+	<button onclick="prehraj()">Spusť audio!</button>
+	<button onclick="znovu()">Spusť odznovu!</button>
+
+	<p class="ovladac--popis">Ovladač hlasitosti:</p>
+	<input onchange="volume()" id="control" type="range" min="0" max="100" value="50" step="50">
+	<script src="main.js"></script>
+
+
+</body>
+
+</html>
